@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>BUNGEE</title>
+    <link rel="stylesheet" href="css/reset.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script src="https://use.fontawesome.com/d5c256e879.js"></script>
+  </head>
+  <body>
+    <header>
+      <a sref="home"> <i class="fa fa-home fa-3x"></i></a>
+      <a sref="search"> <i class="fa fa-search fa-2x"></i></a>
+      <a sref="add"> <i class="fa fa-plus fa-2x" style="padding-top: 3px;"></i></a>
+      <div class="bungee">BUNGEE</div>
+    </header>
+
+    <div class="view-container">
+        <div ui-view></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="server.js"></script>
+    <script src="public/app.js"></script>
+    <script src="public/components/addCtrl.js"></script>
+    <script src="public/components/categoryCtrl.js"></script>
+    <script src="public/components/searchCtrl.js"></script>
+
+  </body>
+</html>

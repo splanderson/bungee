@@ -3,8 +3,12 @@ var db = app.get('db');
 
 module.exports = {
   Create: function(req, res){
-    db.create_link(function(err, link){
-      // res.send(link);
+    db.create_link([req.body.category, req.body.sub_category, req.body.os, req.body.title, req.body.description, req.body.linkurl], function(err, link){
+      if (err){
+        console.log(err);
+      }else{
+        res.send(req.body);
+      }
     })
   },
   GetAll: function(req, res){
@@ -25,12 +29,22 @@ module.exports = {
       }
     });
   },
-  Update: function(req, res){
-    db.update_link()
-    // user.name = req.params.name;
-    // res.json(user.name);
+  UpdateDesc: function(req, res){
+    db.update_link([req.body.description, req.body.title], function(err, link){
+      if (err){
+        console.log(err);
+      }else{
+        res.send(req.body);
+      }
+    });
   },
   Delete: function(req, res){
-    db.delete_link()
+    db.delete_link([req.body.title], function(err, link){
+      if (err){
+        console.log(err);
+      }else{
+        res.send(console.log("Successfully Deleted"));
+      }
+    });
   }
 }

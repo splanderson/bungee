@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+}
+
+header i {
+  color: gray;
+  margin: 10px;
+  padding-left: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+header i:hover {
+  color: orange;
+}
+
+.bungee {
+  font-size: 42px;
+  font-weight: bold;
+  color: gray;
+
+}
+
+body {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+  color: gray;
+}
+
+/*button {
+  border: 1px solid gray !important;
+  border-radius: 5px !important;
+  background: gray;
+  color: #FFF !important;
+  padding: 2px 5px !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  margin-left: 2px;
+  font-size: 24px;
+
+}
+
+button:hover {
+background: #666 !important;
+}*/
