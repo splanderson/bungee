@@ -22,7 +22,7 @@ header i:hover {
   font-size: 42px;
   font-weight: bold;
   color: gray;
-
+  justify-content: center;
 }
 
 body {
